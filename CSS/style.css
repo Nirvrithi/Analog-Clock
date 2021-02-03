@@ -1,0 +1,136 @@
+.clock{
+    height:500px;
+    width:500px;
+    background: linear-gradient(to right, rgba(105, 27, 207, 0.8), rgba(7, 255, 243, 0.8));
+    border-radius: 50%;
+}
+ 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(93,74,69,0.8), rgba(163, 135, 8, 0.8));
+}
+ 
+ 
+ 
+.clock::before{
+    content: ' ';
+    width:40px;
+    height:40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 49%;
+    z-index: 3;
+}
+ 
+.hours{
+    width:10px;
+    height:150px;
+    background: linear-gradient(to right, rgba(66, 16, 2, 0.8), rgba(255, 255, 255, 0.8));
+}
+ 
+.minutes{
+    width:10px;
+    height:210px;
+    background: linear-gradient(to right, rgba(230, 188, 6, 0.8), rgba(255, 5, 5, 0.8));
+}
+ 
+.seconds{
+    width:10px;
+    height:180px;
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.8), rgba(0, 255, 98, 0.8));
+}
+ 
+ 
+.hands{
+ 
+    position: absolute;
+    bottom:73%;
+    left: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 2;
+}
+ 
+.number{
+    color:white;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+ 
+.twelve{
+    position: absolute;
+    top:1%;
+    left:49%;
+}
+ 
+.one{
+    position: absolute;
+    top:4%;
+    left:55%;
+}
+
+.two{
+    position: absolute;
+    top: 12%;
+    left:59.5%;
+}
+
+.three{
+    position: absolute;
+    top:25%;
+    left: 61.5%
+}
+
+.four{
+    position: absolute;
+    top: 39.5%;
+    left: 59.5%;
+}
+
+.six{
+    position:absolute;
+    top:50%;
+    left: 49%;
+}
+
+.five{
+    position: absolute;
+    top:47.5%;
+    left: 55%;
+}
+
+.seven{
+    position: absolute;
+    top:47%;
+    right: 55.5%;
+}
+
+.eight{
+    position: absolute;
+    top: 39%;
+    right: 60%;
+}
+
+
+.nine{
+    position: absolute;
+    top:25%;
+    right: 61.5%;
+}
+
+.ten{
+    position: absolute;
+    top: 12%;
+    right:59%;
+}
+
+.eleven{
+    position: absolute;
+    top: 4%;
+    right:55%;
+}
